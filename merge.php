@@ -48,7 +48,7 @@ function pageToPDF($page, $template, $text) {
     $pdf->setFiles($page); //$files is an array with existing PDF files.
     $pdf->setInput($text,$template);
     $pdf->concat();
-    $pdf->Output();
+    $pdf->Output('boo.pdf','D');
 }
 
 pageToPDF($pathToFile, $pathToTemplate, $pathToInput);

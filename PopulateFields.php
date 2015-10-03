@@ -1,4 +1,7 @@
-<form>
+<html>
+<body>
+
+<form method="post" action= "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" >
 First_Name:<br>
 <input type="text" name="First_Name">
 <br>
@@ -19,6 +22,12 @@ Country:<br>
 <br>
 Postal_Code:<br>
 <input type ="text" name="Postal_Code">
+<br>
+Phone:<br>
+<input type ="text" name="Phone">
+<br>
+E-mail:<br>
+<input type ="text" name="E_Mail">
 <br>
 Day:<br>
 <input type ="text" name="Day">
@@ -44,5 +53,23 @@ PDF:<br>
 <input type ="file" name="PDF">
 <br><br>
 <input type="submit" value="Submit">
-
 </form>
+
+<?php
+require_once('merge.php');
+// if(isset$_POST['Name']) {
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	$pathtoinput = array (
+		$First_Name => $_POST['First_Name'],
+		$Last_Name => $_POST['Last_Name'],
+		$Street => $_POST['Street'],
+		$City => $_POST['City'],
+	    $Phone => $_POST['Phone'],
+	    );
+	pageToPDF($pathToFile, $pathToTemplate, $pathToInput);
+}
+?>
+
+</body>
+</html>
