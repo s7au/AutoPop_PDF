@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<form method="post" action= "<?php echo htmlspecialchars("merge.php");?>" target="_blank">
+<form method="post" action= "<?php echo htmlspecialchars("merge.php");?>" target="_blank" enctype="multipart/form-data">
 First_Name:<br>
 <input type="text" name="First_Name">
 <br>
@@ -41,10 +41,10 @@ Year:<br>
 <br>
 Custom Fields:<br>
 <input type ="text" name="CustomField1">:<br>
-<input type ="text" name="Street">
+<input type ="text" name="CustomField1_Input">
 <br><br>
-<input type ="text" name="CustomField1">:<br>
-<input type ="text" name="Street">
+<input type ="text" name="CustomField2">:<br>
+<input type ="text" name="CustomField2_Input">
 <br><br>
 Input Template:<br>
 <input type ="file" name="input_template">

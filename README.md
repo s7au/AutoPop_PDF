@@ -1,2 +1,2 @@
 # AutoPop_PDF
-Autopopulate PDF Fields
+Hi, this is a fairly basic (I think) PDF autopopulater. Make you you have LAMP or whatever installed and clone into a folder in your web root (I don't know the name). So in my case it was /var/www/html/. Make sure your php.ini has file upload enabled. This ONLY autopopulates PDF's using txt file templates; nothing else. I am too lazy to make it reject incorrect file types so don't try to trick it.

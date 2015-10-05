@@ -5,3 +5,10 @@ Page X Y Info
 3 30 30 Phone
 4 40 40 Last_Name
 5 50 50 City
+3 40 15 Province
+3 50 25 E_Mail
+3 50 35 Day
+3 50 45 Month
+3 50 55 Year
+3 50 65 Random1
+3 50 75 Random2

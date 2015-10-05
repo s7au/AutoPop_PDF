@@ -1,10 +1,8 @@
-<p>Code has not been synced with UI so nothing works atm...</p>
-
-<p>This needs two libraries: FPDI and TCPDF. Please extract these two libraries into the root of your primary domain. I did not include them because I think there might be a law against that. Or there should be.</p>
+<p>This needs two libraries: FPDI and TCPDF. Please extract these two libraries into the root of your web domain. (in the case of linux it will be /var/www/html/) I did not include them because I think there might be a law against that. Or there should be.</p>
 
 <p>Create a text file according to the template on "Input Template" tab. Keep the first line as the code will read starting from the second line. Also remember to separate your columns with white space. This really was not made to be bug proof. If entirely not obvious, here are the column descriptions:</p>
 <p>The first column is the page number.</p>
 <p>The second and third column denote the x and y coordinate of the text. According to google a typical paper has dimensions 210 mm X 297 mm. Say (x,y) denote your coordinate on the page. Top left is (0,0), top right is (210,0), bottom left is (0,297), and bottom right is (210,297). Hopefully that makes sense.</p>
 <p>The final column is the field tag. Currently I have the following tags: First_Name, Last_Name, Street, City, Province, Country, Postal_Code, Day, Month, Year. If I have time will see if I can implement custom tags. Please preserves cases and underscores!</p>
 
-<p>Finally go to Autopopulate tab, input the information you want in each field (e.g. Bob in First_Name), upload your PDF and your Input Template, click the Populate button and... whala! If I finish this something will happen.</p>
+<p>Finally go to Autopopulate tab, input the information you want in each field (e.g. Bob in First_Name), upload your PDF and your Input Template, click the Populate button and... yeah. If there's not enough fields there are two custom ones. Just remember everything is case sensitive!</p>
